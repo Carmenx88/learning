@@ -2,9 +2,96 @@
 article元素代表文档，页面或应用程序中独立的，完整的，可以独立被外部引用的内容，它可以是一篇博客或者报刊中文中，一篇论坛帖子，一段用户评论或独立的插件，或其它任何独立的内容。
 article元素可以是嵌套使用的。
 article元素可以用来表示插件。
+<article>
+    	<header>
+    		<h1>前端开发</h1>
+    		<p>hello,欢迎来到前端开发！</p>
+    	</header>
+    	<article>
+    		<header>作者</header>
+    		<p>评论</p>
+    		<footer>time</footer>
+    	</article>
+    	<footer>
+    		<p>这是底部</p>
+    	</footer>
+    </article> 
+    <article>
+    	<h1>这是一个内嵌页面</h1>
+    	<object data="" type="">
+    		<embed src="#" type="" width="600" height="400"></object>
+    	</object>
+    </article>
 2.section元素
 section元素用于对网站或应用程序中页面上的内容进行分块。一个section元素通常由内容及其标题组成。但section元素并非一个普通的容器元素，当一个容器需要被直接定义样式或脚本定义行为时，推荐使用div而非section元素。
+注意：1.不要将section元素作为设计样式的容器。
+      2.如果article元素更符合使用条件，就不用使用section元素。
+      3.不要用没有标题内容的区域块使用section元素。 
+     <section>
+    	<h1>苹果</h1>
+    	<p>这是一个水果，可以吃。很好吃</p>
+    </section>
+
+    <article>
+    	<h1>苹果</h1>
+    	p>这是一个水果，可以吃。很好吃</p>
+    	<section>
+    		<h2>红富士</h2>
+    		<p>这是一种外表很红的苹果，吃起来也不错</p>
+    	</section>
+    	<section>
+    		<h2>葡萄</h2>
+    		<p>这是一种外表很红的苹果，吃起来也不错</p>
+    	</section>
+    </article>
 3.nav元素
+nav元素是一个可以用作页面导航的连接组，其中的导航元素链接到其它页面或当前页面的其它部分，并不是所有的连接组都要被放到nav元素，只需要将主要的，基本的连接组放进nav元素即可。
+应用场景：
+传统导航条，侧边栏导航，页内导航，翻页操作
+    <nav>
+    	<ul>
+    		<li><a href="#">主页</a></li>
+    		<li><a href="#">开发文档</a></li>
+    	</ul>
+    </nav>
+    <article>
+    	<header>
+    	<h1>HTML与CSS3的历史</h1>
+    	<nav>
+    		<ul>
+    			<li><a href="#">HTML的历史</a></li>
+    			<li><a href="#">CSS3的历史</a></li>
+    		</ul>
+    	</nav>
+    	</header>
+    	<section>
+    		<h1>HTML历史</h1>
+    		<p>。。。</p>
+    	</section>
+    	<section>
+    		<h1>CSS3历史</h1>
+    		<p>。。。</p>
+    	</section>
+    	<footer>
+    		<a href="#">修改</a>
+    		<a href="#">删除</a>
+    	</footer>
+    </article>
+    <footer>
+    	<p><small>版权声明：</small></p>
+    </footer>
 4.aside元素
+aside元素用来表示当前页面或者文章的附属信息部分，它可以包含与当前页面或主要内容相关的引用，侧边栏，广告，导航条，以及其它类似的有区别与主要内容的部分。
+<header>
+	<h1>JS入门</h1>
+</header>
+<article>
+	<h1>语法</h1>
+	<p>文章的正文。。。</p>
+	<aside>
+		<h1>名词解释</h1>
+		<p>语法：这是一个对语言来说很重要的内容体</p>
+	</aside>
+</article>
 5.time元素与微格式
 6.pubdate属性
